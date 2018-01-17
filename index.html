@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script src="https://jic.talkingdata.com/app/h5/v1?appid=9D55589D8E8342B493700ABD11C89B5E&vn=一起画&vc=1.0.1"></script>
+    <title>一起画</title>
+    <style>
+      body {
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+        font-family: "Microsoft YaHei UI Light", sans-serif;
+        -webkit-appearance: none;
+      }
+    </style>
+  </head>
+  <img style="display:none" src="http://wx.17hua.me/static/obj_img/logo_for_share.png">
+  <div id="app">
+    <transition :enter-active-class="goPage" :leave-active-class="BackPage" mode="out-in">
+      <router-view></router-view>
+    </transition>
+  </div>
+  <!-- built files will be auto injected -->
+  <script>
+    var _mtac = {};
+    (function () {
+      var mta = document.createElement("script");
+      mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500500912");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+
+  </script>
+</body>
+
+</html>
